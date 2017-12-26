@@ -1,11 +1,9 @@
 package transients.bug
 
-class Somethin {
+class Somethin implements Doable {
 
     String persisted
-    String notPersisted = "test"
 
-    static transients = ['notPersisted']
 
     static constraints = {
     }
