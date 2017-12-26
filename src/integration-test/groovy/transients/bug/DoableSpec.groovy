@@ -26,7 +26,7 @@ class DoableSpec extends Specification {
         Somethin refreshedSomethin = Somethin.get(id)
 
         expect:
-        refreshedSomethin.forceUpdate = false
+        refreshedSomethin.forceUpdate == false
 
     }
 }
